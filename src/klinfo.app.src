@@ -1,0 +1,20 @@
+{application, klinfo, [
+	{description, "klinfo application"},
+	{vsn, "0.1.0"},
+	{registered, []},
+	{applications, [
+		kernel,
+		stdlib,
+		crypto,
+		inets,
+		lager,
+		compiler,
+		syntax_tools,
+		cowboy,
+		jsx,
+		sasl
+	]},
+	{included_applications, [pooler]},
+	{mod, {klinfo_app, []}},
+	{env, []}
+]}.
